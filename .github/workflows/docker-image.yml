@@ -1,0 +1,27 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: nixox/nix
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: print info
+      run: |
+        pwd
+        whoami
+        uname -a
+
+    - name: install a pkg
+      run: |
+        nix-env -i wget
+
+    - name: print info
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
