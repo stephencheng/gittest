@@ -7,13 +7,14 @@ on:
 jobs:
 
   build:
-    runs-on: nixox/nix
+    runs-on: nixos-docker
 
     container:
       image: hub.docker.com/nixos/nix:2.3.12
       credentials:
         username: ${{ secrets.GH_DOCKER_USERNAME }}
         password: ${{ secrets.GH_DOCKER_PW }}
+      label: nixos-docker
 
     steps:
     - uses: actions/checkout@v2
