@@ -7,8 +7,6 @@ on:
 jobs:
 
   build:
-    runs-on: nixos-docker
-
     container:
       image: hub.docker.com/nixos/nix:2.3.12
       credentials:
