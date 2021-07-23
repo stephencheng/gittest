@@ -7,8 +7,10 @@ on:
 jobs:
 
   build:
+    runs-on: nixox/nix
+
     container:
-      image: nixox/nix:2.3.12
+      image: hub.docker.com/nixos/nix:2.3.12
       credentials:
         username: ${{ secrets.GH_DOCKER_USERNAME }}
         password: ${{ secrets.GH_DOCKER_PW }}
