@@ -1,0 +1,6 @@
+Permissions Size User         Group Date Modified Git Name
+drwxr-xr-x@    - stephencheng staff  9 Jul 01:18   --  .git
+.rwxr-xr-x@ 2.1k stephencheng staff  9 Mar  2019   -M  a
+.rwxr-xr-x@    7 stephencheng staff  9 Mar  2019   -M  .gitignore
+.rwxr-xr-x@ 1.1k stephencheng staff  9 Mar  2019   -M  b
+.rwxr-xr-x@    0 stephencheng staff  9 Jul 01:19   -M  d02.txt
